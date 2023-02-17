@@ -1,0 +1,288 @@
+
+Q.1  use to enter name and displaying the same name with welcome message
+
+
+<script type="text/javascript" >
+var str=window.prompt(" Enter your name ");
+document.write(" Welcome " + str );
+</script>
+
+Q.2 Print next 5 numbers of user entered digit
+
+<script type="text/javascript" > var str=window.prompt(" Enter a number "); str=parseInt(str); for(i=str; i<str+5; i++){ document.write(i + "<br>"); } </script>
+
+
+Q.3 Print the user entered string in reverse order
+
+<script type="text/javascript" >
+var my_str=window.prompt("Enter your name");
+var i=my_str.length;
+i=i-1;
+for (var x = i; x >=0; x--)
+{
+document.write(my_str.charAt(x));
+}
+</script>
+
+
+Q.4 Multiplication table of a user entered number
+
+<script type="text/javascript" > var str=window.prompt(" Enter a number "); str=parseInt(str); for(i=1; i<=10; i++){ document.write(i * str + ","); } </script>
+
+
+Q.5  Sum of two numbers as entered by user
+
+<script type='text/javascript'> var a,b,c; aVal=window.prompt("enter your first no."); bVal=window.prompt("enter your 2nd no."); a=parseInt( aVal); b=parseInt( bVal); result=a+b; document.writeln("the sum is: "+result); </script>
+
+
+
+
+
+JavaScript Programs with Examples
+
+
+Fibonacci Series JavaScript Program (for beginners)
+This is a simple JavaScript example program for fibonacci sequence.
+
+<html>
+<body>
+<script type="text/javascript">
+var a=0,b=1,c;
+document.write("Fibonacci");
+while (b<=10)
+{
+document.write(c);
+document.write("<br/>");
+c=a+b;
+a=b;
+b=c;
+}
+</script>
+</body>
+</html>
+
+Copy Text JavaScript Program (for beginners)
+This is simple JavaScript Program with example to Copy Text from Different Field. 
+
+<html>
+<head>
+<title>
+Copy text</title>
+</head>
+<body>
+<center>
+<h2>Copy text from different field</h2>
+<p>
+<input type="text" style="color: #FF0080;background-color: #C9C299" id="field1" value="Good Morning">
+<input type="text" style="color: #FF0080;background-color: #C9C299" id="field2">
+<button style="background-color: #E799A3" onclick="document.getElementById('field2').value = document.getElementById('field1').value">Click to Copy Text
+</p>
+</center>
+</body>
+</html>
+
+Form Validation JavaScript Program (for beginners)
+This is a simple JavaScript form validation program with example.
+
+<html>
+<head>
+<script type="text/javascript">
+function sub()
+{
+if(document.getElementById("t1").value == "")
+alert("Please enter your name");
+else if(document.getElementById("t2").value == "")
+alert("Please enter a password");
+else if(document.getElementById("t2").value != document.getElementById("t3").value)
+alert("Please enter correct password");
+else if(document.getElementById("t4").value == "")
+alert("Please enter your address");
+else
+alert("Form has been submitted");
+}
+</script>
+</head>
+<body>
+<form>
+<p align="center">
+User Name:<input type="text" id="t1"><br><br>
+Password:<input type="text" id="t2"><br><br>
+Confirm Password:<input type="text" id="t3"><br><br>
+Address:<textarea rows="2" cols="25" id="t4"></textarea><br><br>
+<input type="button" value="Submit" onclick="sub()">
+<input type="reset" value="Clear All">
+</p>
+</form>
+</body>
+</html>
+
+JavaScript Popup Window Program (for beginners)
+This is a simple JavaScript example program to generate confirm box.
+
+<html>
+<head>
+<script type="text/javaScript">
+function see()
+{
+var c= confirm("Click OK to see Google Homepage or CANCEL to see Bing Homepage");
+if (c== true)
+{
+window.location="http://www.google.co.in/";
+}
+else
+{
+window.location="http://www.bing.com/";
+}
+}
+</script>
+</head>
+<body>
+<center>
+<form>
+<input type="button" value="Click to chose either Google or Bing" onclick="see()">
+</form>
+</center>
+</body>
+</html>
+
+
+Palindrome JavaScript Program (for beginners)
+This is a simple JavaScript palindrome program with example.
+
+
+<html>
+<body>
+<script type="text/javascript">
+  function Palindrome() {
+   var revStr = "";
+   var str = document.getElementById("str").value;
+   var i = str.length;
+   for(var j=i; j>=0; j--) {
+      revStr = revStr+str.charAt(j);
+   }
+   if(str == revStr) {
+      alert(str+" -is Palindrome");
+   } else {
+      alert(str+" -is not a Palindrome");
+   }
+}
+</script>
+<form >
+  Enter a String/Number: <input type="text" id="str" name="string" /><br />
+  <input type="submit" value="Check" onclick="Palindrome();"/>
+</form>
+</body>
+</html>
+
+
+Check Odd/Even Numbers JavaScript Program (for beginners)
+This is a simple JavaScript program to check odd or even numbers with example.
+
+
+<html> 
+<head>
+<script type="text/javascript"> 
+var n = prompt("Enter a number to find odd or even", "Type your number here");
+n = parseInt(n);
+if (isNaN(n))
+{
+alert("Please Enter a Number");
+}
+else if (n == 0)
+{
+alert("The number is zero");
+}
+else if (n%2)
+{
+alert("The number is odd");
+}
+else
+{
+alert("The number is even");
+}
+</script> 
+</head>
+<body>
+</body> 
+</html>
+
+
+Simple Switch Case JavaScript Program (for beginners)
+This is a simple switch case JavaScript example program for beginners..
+
+<html>
+<head>
+<script type="text/javascript">
+var n=prompt("Enter a number between 1 and 7");
+switch (n)
+{
+case (n="1"):
+document.write("Sunday");
+break;
+case (n="2"):
+document.write("Monday");
+break;
+case (n="3"):
+document.write("Tuesday");
+break;
+case (n="4"):
+document.write("Wednesday");
+break;
+case (n="5"):
+document.write("Thursday");
+break;
+case (n="6"):
+document.write("Friday");
+break;
+case (n="7"):
+document.write("Saturday");
+break;
+default:
+document.write("Invalid Weekday");
+break
+}
+</script>
+</head>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><title>check the even or odd</title></head>
+<body>
+<script type="text/javaScript">
+var n;
+n=parseIntprompt("Enter a number find even or odd","00"),10);
+if(is NaN(n))
+{
+alert("please enter a number");
+}
+else if (n==0)
+{
+alert("the number is zero");
+}
+//var r=(n%2);
+else if(n%=2)
+{
+alert(n+"this no is even");
+}
+else
+{
+alert(n+"this no. is odd");
+}
+</script>
+</body>
+</html>
